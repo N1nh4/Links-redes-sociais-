@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            background-image: url('https://images.pexels.com/photos/24372401/pexels-photo-24372401/free-photo-of-jipe-e-rock.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            overflow: hidden;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            
+            padding: 10px;
+            text-align: center;
+        }
+
+        ul {
+            display: block;
+            margin: 10px auto;
+        }
+
+        li {
+            width: fit-content;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            width: fit-content;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            transition: ease-in-out;
+            animation: animacao 2s infinite;
+        }
+
+        @keyframes animacao {
+            0% {
+                transform: scale(1) rotate(0deg);
+            } 50% {
+                transform: scale(1.4) rotate(180deg);
+            } 100% {
+                transform: scale(1) rotate(360deg);
+            }
+        }
+
+        div#um {
+            position: relative;
+            width: 50%;
+            min-width: 250px;
+            max-width: 500px;
+            height: 60px;
+            margin: 50px auto;
+            text-align: center;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            transition: all ease-in-out;
+            animation: name duration timing-function delay iteration-count direction fill-mode;
+            animation: marquee 10s infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                left: 100%;
+            } 100% {
+                left: -100%
+            }
+        }
+
+        #dois {
+            text-align: center;
+        }
+
+        h1:hover {
+            animation-play-state: running;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+         <thead>
+            <th>um</th>
+            <th>dois</th>
+            <th style="width: 200px;">três</th>
+            <th>quatro</th>
+         </thead>
+         <tbody>
+            <tr>
+                <td colspan="2" rowspan="2" style="text-align: center;">um</td>
+                <td>
+                    <ul>
+                        <li>jlkj</li>
+                        <li>hljhjk</li>
+                        <li>jlkggiy</li>
+                    </ul>
+                </td>
+                <td>tres</td>
+            </tr>
+            <tr>
+                <td>dois</td>
+                <td>tres</td>
+            </tr>
+         </tbody>
+    </table>
+
+    <div id="um">
+        TESTE
+    </div>
+
+    <div id="dois">
+        <h1>
+            TESTE 2
+        </h1>
+
+    </div>
+</body>
+</html>

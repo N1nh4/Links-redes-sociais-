@@ -1,0 +1,26 @@
+@media screen and (max-width: 320px ){
+
+    body {
+        background-color: blue;
+    }
+    div#centro {
+    display: flex;
+    position: relative;
+    margin: 100px auto 50px;
+    padding: 40px;
+    width: 90%;
+    height: 550px;
+    background-color: var(--dark-grey);
+    border-radius: 10px;
+    flex-direction: column;
+    line-height: 1.0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+footer {
+    margin: 0;
+}
+
+
+}
